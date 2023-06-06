@@ -1,0 +1,31 @@
+@import url(/css/vars.css);
+
+body {
+    background-color: #1d1d1d;
+}
+
+.main_grid {
+    display: grid;
+    grid-template-areas: 'topBar topBar' 'sideBar cont';
+    grid-template-columns: 300px auto;
+}
+
+.main_grid_topBar {
+    padding: 16px;
+    background-color: #1d1d1f;
+    color: #333333;
+    border-bottom: 1px solid #3d3d3d;
+    grid-area: topBar;
+}
+
+.main_grid_sideBar {
+    padding: 40px;
+    grid-area: sideBar;
+    border-right: 1px solid #3d3d3d;
+    background-color: #1a1919;
+}
+
+.main_grid_content {
+    padding: 40px;
+    grid-area: cont;
+}
